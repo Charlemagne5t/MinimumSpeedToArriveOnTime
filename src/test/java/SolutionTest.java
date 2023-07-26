@@ -31,4 +31,26 @@ public class SolutionTest {
 
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void minSpeedOnTimeTest4() {
+        int[] dist = {1, 1, 100_000};
+        double hour = 2.01;
+        int expected = 10_000_000;
+        int actual = new Solution().minSpeedOnTime(dist, hour);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+
+
+
+    @Test
+    public void minSpeedOnTimeTest5() {
+        int[] dist = {5,3,4,6,2,2,7};
+        double hour = 10.92;
+        int expected = 4;
+        int actual = new Solution().minSpeedOnTime(dist, hour);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
